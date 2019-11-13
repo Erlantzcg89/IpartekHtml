@@ -9,10 +9,10 @@
 */
 
 /* reset basico para eliminar estilos de todos los browser - user-agent */
-*{
+/* *{
     margin: 0;
     padding: 0;
-}
+} */
 
 body{
     font-size: 16px;
@@ -55,7 +55,11 @@ td{
 
 td:hover{
     background-color: pink;
-}    
+}
+
+img{
+    width: 100%;
+}
 
 .parallax{
 
@@ -76,6 +80,14 @@ td:hover{
 }
 .parallax h2{
     padding-top: 0.5em;
+}
+
+.subTitulo{
+    color: white;
+}
+
+.textoTachado{
+    text-decoration:line-through;
 }
 
 

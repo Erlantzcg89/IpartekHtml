@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- html5 -->
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Titulo Pestaña</title>
+    <base href="/pruebaTecnica/">
+    <!-- Meter favIcon -->
+    <!-- estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+    <div class="parallax">
+        <h1>Prueba Técnica</h1>
+        <h2 class="subTitulo">Wellcome to HTML</h2>
+    </div>
+
+    <nav>
+        <a href="index.html">Volver</a>
+    </nav>
+
+    <h2>Etiquetas básicas</h2>
+    <img src="images/html5-cheat-sheet.png" alt="Cheat-Sheet de html 5">
+
+    <h2>&lt;progress&gt; & &lt;meter&gt;</h2>
+
+    <h2>Iframe Youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/seaq4UxKNHU" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h2>Listas &lt;ul&gt;, &lt;ol&gt;, &lt;dl&gt;</h2>
+    <ul>
+        <li>Item sin ordenar 1</li>
+        <li>Item sin ordenar 2</li>
+        <li>Item sin ordenar 3</li>
+    </ul>
+    <ol>
+        <li>Item ordenado 1</li>
+        <li>Item ordenado 2</li>
+        <li>Item ordenado 3</li>
+    </ol>
+    <dl>
+        <dt>Beast of Bodmin</dt>
+        <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+        <dt>Morgawr</dt>
+        <dd>A sea serpent.</dd>
+
+        <dt>Owlman</dt>
+        <dd>A giant owl-like creature.</dd>
+    </dl>
+
+    <h2>Enlaces</h2>
+    <nav>
+        <a href="tel:685456544">685 456 544</a>
+        <a target="_blank" href="https://htmlcheatsheet.com/js/">Cheat Sheets</a>
+    </nav>
+
+    <h2>&lt;code&gt; + &lt;pre&gt;</h2>
+    <pre><code>function Panel(element, canClose, closeHandler) {
+            this.element = element;
+            this.canClose = canClose;
+            this.closeHandler = function () { if (closeHandler) closeHandler() };
+          }</code></pre>
+
+    <h2>Tachar texto por css</h2>
+    <p class="textoTachado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem mollitia, temporibus enim
+        odit autem similique iste iusto sequi vitae itaque libero et culpa laborum repellat fuga ipsa tenetur nihil
+        quidem!</p>
+
+    <h2 id="colorCambiar">Botón que llama a javascript + &lt;noscript&gt;</h2>
+    <button onclick="cambiarColor()">Cambiar color h2</button>
+
+    <!-- javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
