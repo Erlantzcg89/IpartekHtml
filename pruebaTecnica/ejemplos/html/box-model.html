@@ -1,0 +1,107 @@
+<!DOCTYPE html> <!-- html5 -->
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box model</title>
+    <base href="/pruebaTecnica/">
+    <!-- Meter favIcon -->
+    <!-- estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+    <style>
+        p.prueba {
+            color: teal;
+            border: 5px solid green;
+            margin: 10px;
+            padding: 20px;
+        }
+
+        p {
+            border: 1px solid #000;
+            padding: 5px;
+        }
+
+        span {
+            border: 3px dotted red;
+            padding: 5px;
+        }
+
+        .box {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+
+
+
+            border: 2px solid teal;
+            background-color: royalblue;
+            border-radius: 10px;
+
+            color: white;
+            font-size: 5em;
+            text-align: center;
+        }
+
+        section {
+            border: 1pox solid lightgrey;
+            border-radius: 5px;
+            background-color: rgb(243, 239, 239);
+            padding: 10px;
+            margin-bottom: 50px;
+
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+        }
+    </style>
+
+
+
+    <div class="parallax"></div>
+
+    <nav id="menu">
+        <a href="ejemplos/html/index.html">Volver</a>
+    </nav>
+
+    <div class="container">
+        <h1>Box Model</h1>
+        <p class="prueba">Toda etiqueta de html tiene una estructura de caja.</p>
+
+        <section>
+            <h2>Display</h2>
+            <p>El display es el atributo para gestionar si es linea o bloque</p>
+            <p>*trick: usar inspector para verlo</p>
+            <dl>
+                <dt>Block:</dt>
+                <dd>Elemento que ocupa todo el ancho del elemento padre</dd>
+                <dt>Inline:</dt>
+                <dd>Elemento que ocupa todo lo que tenga su contenido</dd>
+                <dt>Inline block:</dt>
+                <dd>Hibrido de los dos anteriores</dd>
+            </dl>
+            <p>Lorem ipsum <span>sit amet consectetur adipisicing</span> elit. Tempora tempore commodi accusantium!
+                Dolores
+                nisi
+                similique dolore animi molestias, porro aperiam inventore cupiditate, a optio asperiores quos reiciendis
+                commodi, repudiandae praesentium.</p>
+            <div class="box">1</div>
+            <div class="box">2</div>
+        </section>
+        <section>
+            <h2>Overflow</h2>
+
+        </section>
+        <img src="images/box-model.png" alt="Box-model">
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html> <!-- html5 -->
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animaciones</title>
+    <base href="/pruebaTecnica/">
+    <!-- Meter favIcon -->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+    <style>
+        @keyframes mymove {
+            from {
+                background-color: #0099CC;
+                border-radius: 0;
+            }
+
+            to {
+                background-color: red;
+                border-radius: 50%;
+            }
+        }
+
+        .box-animacion {
+
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            background-color: #0099CC;
+            animation: mymove 2s infinite alternate;
+        }
+    </style>
+
+    <div class="parallax">
+        <h1>Prueba Técnica</h1>
+        <h2 class="subTitulo">Wellcome to HTML</h2>
+    </div>
+
+    <nav id="menu">
+        <a href="ejemplos/css/index.html">Volver</a>
+    </nav>
+
+    <h2>Animaciones @Keyframe</h2>
+
+    <div class="box-animacion"></div>
+
+</body>
+
+</html>

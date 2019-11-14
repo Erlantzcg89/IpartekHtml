@@ -1,0 +1,12 @@
+TO-DO 14/11/2019
+
+chuleta css
+colisiones de estilos
+selectores css
+pseudoclases css
+
+estructura archivos
+	especificidad.html
+	basico.html
+	avanzado.html
+	animaciones.html

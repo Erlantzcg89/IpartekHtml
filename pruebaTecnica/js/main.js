@@ -1,4 +1,3 @@
-
 // comentario de linea
 
 /* commentario
@@ -25,24 +24,47 @@ function buscarVoluntario() {
     console.trace('click buscarVoluntario');
     var elemento = document.getElementById('nombre');
 
-    var alumnos = [
-        {
-            "nombre": "pepe",
-            "github": "https://github.com/ipartek",
-            "edad": 34,
-            "aprobado": false
+    var alumnos = [{
+            "nombre": "Aitor"
         },
         {
-            "nombre": "pepa",
-            "github": "https://github.com/ipartek",
-            "edad": 37,
-            "aprobado": true
+            "nombre": "Endika"
         },
         {
-            "nombre": "doramein",
-            "github": "https://github.com/ipartek",
-            "edad": 18,
-            "aprobado": false
+            "nombre": "Iñigo"
+        },
+        {
+            "nombre": "Juan Carlos"
+        },
+        {
+            "nombre": "Alejandro"
+        },
+        {
+            "nombre": "Cristian"
+        },
+        {
+            "nombre": "Raul"
+        },
+        {
+            "nombre": "Joseba"
+        },
+        {
+            "nombre": "Iker"
+        },
+        {
+            "nombre": "Kiryl"
+        },
+        {
+            "nombre": "María"
+        },
+        {
+            "nombre": "Ana"
+        },
+        {
+            "nombre": "Erlantz"
+        },
+        {
+            "nombre": "Mikel"
         }
     ];
     var numAleatorio = Math.floor(Math.random() * alumnos.length);
@@ -50,9 +72,8 @@ function buscarVoluntario() {
     elemento.style.color = 'teal';
     var voluntario = alumnos[numAleatorio];
     elemento.innerHTML = `<span>
-                                aprobado ${voluntario.aprobado}
+                            ${voluntario.nombre}
                           </span>
-                          <a href="${voluntario.github}" target="_blank">${voluntario.nombre}</a>
                         `;
 
 
@@ -64,8 +85,7 @@ function cambiarColor() {
     console.trace('click cambiarColor');
     var elemento = document.getElementById('colorCambiar');
 
-    var colores = [
-        {
+    var colores = [{
             "nombre": "rojo",
             "valor": "red"
         },

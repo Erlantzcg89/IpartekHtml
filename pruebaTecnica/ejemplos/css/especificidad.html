@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Titulo Pestaña</title>
+    <title>Especificidad</title>
     <base href="/pruebaTecnica/">
     <!-- Meter favIcon -->
     <!-- estilos -->
@@ -20,11 +20,11 @@
         <h2 class="subTitulo">Wellcome to HTML</h2>
     </div>
 
-    <nav>
-        <a href="index.html">Volver</a>
+    <nav id="menu">
+        <a href="ejemplos/css/index.html">Volver</a>
     </nav>
 
-    <h2>Css Básico</h2>
+    <h2>Especificidad</h2>
 
     <h2>Ejemplo de especificidad de los css</h2>
     <p>el orden es !important>id>class, y el último en definirse es el que sobreescribe</p>
@@ -36,6 +36,25 @@
         p {
             color: teal;
         }
+
+        .container p span {
+            background-color: purple;
+        }
+
+        code {
+            background-color: lightgrey;
+            color: green;
+        }
+
+        p .especial {
+            font-size: 2em;
+            font-weight: 600;
+        }
+
+        p.especial {
+            color: purple;
+            background-color: white;
+        }
     </style>
 
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia quam dolorum aliquid vel quidem quod iure et
@@ -46,21 +65,10 @@
     <p>Aspernatur inventore, eveniet odio itaque voluptas quasi aliquid culpa assumenda quaerat, quas eligendi omnis
         velit quia asperiores reiciendis fugit commodi amet aliquam libero nisi! Repellendus tempore ullam architecto
         praesentium illo.</p>
-    <p>Corporis soluta at, ex expedita nobis voluptates eaque quasi rerum saepe, ipsam sit omnis accusamus blanditiis
-        in, tempore suscipit. Cumque fugiat hic quos ut dolore nisi aliquam a ad quas.</p>
-    <p>Eaque doloremque unde magnam esse voluptate molestiae explicabo repellendus quod necessitatibus! Qui officia
-        aspernatur et quibusdam corrupti illo impedit autem veritatis, consectetur optio sed. Veniam voluptates et
-        maxime neque. Minima?</p>
-
-    <h2>Pseudoclases</h2>
-    <ul>
-        <li>active</li>
-        <li>hover</li>
-        <li>link</li>
-        <li>visited</li>
-        <li>nth-child()</li>
-        <li>first/last-child</li>
-    </ul>
+    <p>Eligendi quas <span>explicabo</span> provident vel, quaerat doloribus aut minima amet dolor a saepe ut
+        ratione temporibus
+        suscipit sunt ex atque perspiciatis? Dicta voluptatibus reprehenderit aliquam aspernatur? Rem tempora vero
+        quisquam?</p>
 
     <!-- javascript -->
     <script src="js/main.js"></script>

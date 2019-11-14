@@ -1,0 +1,5 @@
+14/11/2019
+CSS
+SELECTORES AVANZADOS
+    e > e hijos directos
+    e + e hermanos continuos
