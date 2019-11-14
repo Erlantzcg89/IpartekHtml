@@ -28,9 +28,10 @@ div.container {
 }
 
 h1 {
-    color: rgb(97, 71, 189);
+    color: teal;
     font-size: 3em;
     text-align: center;
+    margin: 0px 0px 30px 0px;
 
 }
 
@@ -43,7 +44,29 @@ h6 {
     text-align: center;
 }
 
+nav {
+    margin: 10px 0px 0px 0px;
+    padding: 0px 10px;
+}
 
+a {
+    color: teal;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+section {
+    border: 5px solid teal;
+
+    padding: 10px;
+    margin-bottom: 50px;
+
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 128, 128, 0.24);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 128, 128, 0.24);
+    box-shadow: 10px 10px 5px 0px rgba(0, 128, 128, 0.24);
+
+}
 
 
 table {
@@ -54,6 +77,7 @@ table {
 td {
     width: 50%;
     border: 1px solid #000;
+
     /* shorthand */
 
     /*
@@ -74,7 +98,17 @@ img {
     width: 100%;
 }
 
+dl {
+    padding: 0px 10px;
+}
+
+dt {
+    font-weight: 700;
+    margin: 0px 0px 5px 0px;
+}
+
 .parallax {
+    margin: 0px 0px 5px 0px;
 
     background-image: url(/pruebaTecnica/images/nicolas-lobos-NR_tXTuyTak-unsplash.jpg);
 
@@ -102,4 +136,8 @@ img {
 
 .textoTachado {
     text-decoration: line-through;
+}
+
+div.dl {
+    margin: 0px 0px 10px 0px;
 }
