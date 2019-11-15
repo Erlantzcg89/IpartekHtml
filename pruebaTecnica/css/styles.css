@@ -8,6 +8,15 @@
   
 */
 
+/*  Estructura correcta de la hoja de estilos
+    1. reset
+    2. keyframes
+    3. a todas las etiquetas estilos generales
+    4. layouts
+    5. clases
+    6. ids, cosas más específicas
+     */
+
 /* reset basico para eliminar estilos de todos los browser - user-agent */
 /* *{
     margin: 0;
@@ -23,15 +32,16 @@ body {
 
 }
 
-div.container {
+main {
     padding: 0px 50px;
+    margin-bottom: 80px;
 }
 
 h1 {
-    color: teal;
+    color: black;
     font-size: 3em;
     text-align: center;
-    margin: 0px 0px 30px 0px;
+    margin: 20px 0px 30px 0px;
 
 }
 
@@ -44,28 +54,36 @@ h6 {
     text-align: center;
 }
 
+p {
+    padding: 10px;
+}
+
 nav {
-    margin: 10px 0px 0px 0px;
-    padding: 0px 10px;
+    margin: 0px 0px 0px 0px;
+    padding: 10px 10px;
+    /* background-color: rgba(255, 255, 0, 0.521); */
+    background-color: black;
+
 }
 
 nav a {
     margin-right: 10px;
 
-    color: teal;
+    color: white;
     text-decoration: none;
     font-size: 20px;
     font-weight: 700;
 }
 
 nav a:hover {
-    color: rgb(103, 119, 119);
+    color: rgb(236, 253, 1);
 }
 
 /* nav a span {} */
 
 section {
-    border: 5px solid teal;
+    border: 1px solid grey;
+    border-radius: 5px;
 
     padding: 10px;
     margin-bottom: 50px;
@@ -119,8 +137,25 @@ code {
     background-color: rgba(255, 255, 0, 0.521);
 }
 
+.menu {
+    position: sticky;
+    top: 0;
+}
+
+footer {
+    display: inline-block;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.301);
+    position: fixed;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0px 0px 0px 0px;
+}
+
 .parallax {
-    margin: 0px 0px 5px 0px;
+    margin: 0px 0px 0px 0px;
 
     background-image: url(/pruebaTecnica/images/nicolas-lobos-NR_tXTuyTak-unsplash.jpg);
 
@@ -135,19 +170,25 @@ code {
 }
 
 .parallax h1 {
+    color: white;
+    font-size: 64px;
     padding-top: 4em;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 .parallax h2 {
 
-    margin-top: 5px;
+    margin-top: 0px;
 
     font-size: 18px;
 
-    color: teal;
+    color: pink;
 }
 
+.botonBlock {
+    display: block;
+    margin: auto;
+}
 
 .textoTachado {
     text-decoration: line-through;

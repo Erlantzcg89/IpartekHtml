@@ -61,8 +61,10 @@
         }
 
         #imagenBoxModel {
-            display: inline-block;
+            display: block;
             width: 400px;
+            margin: auto;
+
         }
     </style>
 
@@ -70,17 +72,16 @@
 
     <div class="parallax"></div>
 
-    <nav id="menu">
+    <nav class="menu" id="menu">
         <a href="ejemplos/html/index.html">Volver</a>
     </nav>
 
-    <div class="container">
+    <main>
         <h1>Visualización</h1>
         <section>
             <h2>Box Model</h2>
-
-            <img id="imagenBoxModel" src="images/box-model.png" alt="Box-model">
             <p class="prueba">Toda etiqueta de html tiene una estructura de caja</p>
+            <img id="imagenBoxModel" src="images/box-model.png" alt="Box-model">
 
         </section>
 
@@ -153,14 +154,15 @@
         <section>
             <h2>Z-Index</h2>
             <p>Se encarga de la profundidad de los elementos cuando se solapan</p>
-            <p>Usando <code>visibility: hidden</code></p>
             <div class="box">1</div>
             <div class="box" style="z-index:5; position:relative; left:50px; top: -20px; background-color:red;">2</div>
             <div class="box" style="z-index:10; position: relative;">3</div>
         </section>
 
-    </div>
-
+    </main>
+    <footer>
+        <p>&copy; Ipartek - Erlantz Caballero 2019</p>
+    </footer>
 </body>
 
 </html>
