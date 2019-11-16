@@ -5,24 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Especificidad</title>
+
     <base href="/pruebaTecnica/">
-    <!-- Meter favIcon -->
-    <!-- estilos -->
+
+    <link rel="icon" type="image/png" href="https://picsum.photos/id/1009/50/50" />
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
 
 <body>
 
-    <div class="parallax"></div>
+    <div class="parallax">
+
+        <h1>Prueba Técnica</h1>
+        <h2 class="subTitulo">Erlantz Caballero</h2>
+
+    </div>
 
     <nav class="menu" id="menu">
+        <a href="index.html">Inicio</a>
         <a href="ejemplos/css/index.html">Volver</a>
     </nav>
 
     <main>
-        <h1>Especificidad</h1>
+        <h1 class="blanco">Especificidad</h1>
 
         <h2>Ejemplo de especificidad de los css</h2>
         <p>el orden es !important>id>class, y el último en definirse es el que sobreescribe</p>
@@ -72,6 +80,12 @@
             suscipit sunt ex atque perspiciatis? Dicta voluptatibus reprehenderit aliquam aspernatur? Rem tempora vero
             quisquam?</p>
     </main>
+    <footer>
+        <p>&copy; Ipartek - Erlantz Caballero 2019</p>
+    </footer>
+
+    <button onclick="topFunction()" id="botonIrTop" title="Go to top">Top</button>
+
     <!-- javascript -->
     <script src="js/main.js"></script>
 </body>

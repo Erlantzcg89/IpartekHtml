@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Titulo Pestaña</title>
-    <base href="/pruebaTecnica/">
-    <!-- Meter favIcon -->
-    <link rel="stylesheet" href="css/styles.css">
 
+    <title>Prueba Técnica Inicio</title>
+
+    <base href="/pruebaTecnica/">
+
+    <link rel="icon" type="image/png" href="https://picsum.photos/id/1009/50/50" />
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -29,11 +31,11 @@
 
     <main>
 
-        <h1>Alumn@s Ipartek</h1>
+        <h1 class="blanco">Alumn@s Ipartek</h1>
         <section>
             <div>
-                <button class="botonBlock" onclick="buscarVoluntario()">¿Quien Lee?</button>
-                <h3>Voluntario: <span id="nombre"></span></h3>
+                <button class="blockAuto botonTipo001" onclick="buscarVoluntario()">¿Quien Lee?</button>
+                <h2>var voluntario = <span id="nombre"></span></h2>
             </div>
 
             <table id="ipartek" class="tabla border">
@@ -63,7 +65,7 @@
                 </tr>
                 <tr>
                     <td>Raul</td>
-                    <td>X</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>Joseba</td>
@@ -77,7 +79,10 @@
     </main>
     <footer>
         <p>&copy; Ipartek - Erlantz Caballero 2019</p>
+
     </footer>
+
+    <button onclick="topFunction()" id="botonIrTop" title="Go to top">Top</button>
 
     <!-- javascript -->
     <script src="js/main.js"></script>

@@ -5,51 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Selectores b&aacute;sicos</title>
+
     <base href="/pruebaTecnica/">
-    <!-- Meter favIcon -->
-    <!-- estilos -->
+
+    <link rel="icon" type="image/png" href="https://picsum.photos/id/1009/50/50" />
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
 
 <body>
 
+    <style>
+        p {
+            color: teal;
+        }
+
+        .container p span {
+            background-color: purple;
+        }
+
+        code {
+            background-color: lightgrey;
+            color: green;
+        }
+
+        p .especial {
+            font-size: 2em;
+            font-weight: 600;
+        }
+
+        p.especial {
+            color: purple;
+            background-color: white;
+        }
+    </style>
+
     <div class="parallax">
+        <h1>Prueba Técnica</h1>
+        <h2 class="subTitulo">Erlantz Caballero</h2>
     </div>
 
     <nav class="menu" id="menu">
+        <a href="index.html">Inicio</a>
         <a href="ejemplos/css/index.html">Volver</a>
     </nav>
     <main>
-        <h1>Selectores Css Básico</h1>
 
-
-
-        <style>
-            p {
-                color: teal;
-            }
-
-            .container p span {
-                background-color: purple;
-            }
-
-            code {
-                background-color: lightgrey;
-                color: green;
-            }
-
-            p .especial {
-                font-size: 2em;
-                font-weight: 600;
-            }
-
-            p.especial {
-                color: purple;
-                background-color: white;
-            }
-        </style>
+        <h1 class="blanco">Selectores Css Básico</h1>
 
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia quam dolorum aliquid vel quidem quod iure
             et
@@ -103,7 +107,18 @@
 
         <img src="images/csschuleta.png" alt="Chuleta de selectores css">
 
+
+
     </main>
+
+    <footer>
+        <p>&copy; Ipartek - Erlantz Caballero 2019</p>
+    </footer>
+
+    <button onclick="topFunction()" id="botonIrTop" title="Go to top">Top</button>
+
+    <!-- javascript -->
+    <script src="js/main.js"></script>
 
 </body>
 

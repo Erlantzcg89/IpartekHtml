@@ -4,29 +4,29 @@ var ctx = canvas.getContext("2d");
 
 /* array de colores */
 var colores = [{
-        "nombre": "rojo",
-        "valor": "red"
-    },
-    {
-        "nombre": "naranja",
-        "valor": "orange"
-    },
-    {
-        "nombre": "morado",
-        "valor": "purple"
-    },
-    {
-        "nombre": "amarillo",
-        "valor": "yellow"
-    },
-    {
-        "nombre": "negro",
-        "valor": "black"
-    },
-    {
-        "nombre": "verde",
-        "valor": "green"
-    }
+    "nombre": "rojo",
+    "valor": "red"
+},
+{
+    "nombre": "naranja",
+    "valor": "orange"
+},
+{
+    "nombre": "morado",
+    "valor": "purple"
+},
+{
+    "nombre": "amarillo",
+    "valor": "yellow"
+},
+{
+    "nombre": "negro",
+    "valor": "black"
+},
+{
+    "nombre": "verde",
+    "valor": "green"
+}
 ];
 
 /* parámetros de la bola */
@@ -234,5 +234,5 @@ function draw() {
 }
 colorAleatorio();
 canvas.style.backgroundImage =
-    setInterval(draw, 5);
+    setInterval(draw, 10);
 // draw();
