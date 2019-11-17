@@ -88,6 +88,9 @@ section {
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 
+    /* -webkit-box-shadow: 0 0 10px 10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 0 10px 10px rgba(0,0,0,0.75);
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.75); */
 }
 
 section p{
@@ -96,7 +99,7 @@ section p{
 
 
 table {
-    width: 50%;
+    width: 300px;
     margin: auto;
 }
 
@@ -226,6 +229,10 @@ footer p {
 
 .dl {
     margin: 0px 0px 10px 0px;
+}
+
+.width600{
+    width: 600px;
 }
 
 /* Botones */
