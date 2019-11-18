@@ -29,47 +29,47 @@ function buscarVoluntario() {
     var elemento = document.getElementById('nombre');
 
     var alumnos = [{
-        "nombre": "Aitor"
-    },
-    {
-        "nombre": "Endika"
-    },
-    {
-        "nombre": "Iñigo"
-    },
-    {
-        "nombre": "Juan Carlos"
-    },
-    {
-        "nombre": "Alejandro"
-    },
-    {
-        "nombre": "Cristian"
-    },
-    {
-        "nombre": "Raul"
-    },
-    {
-        "nombre": "Joseba"
-    },
-    {
-        "nombre": "Iker"
-    },
-    {
-        "nombre": "Kiryl"
-    },
-    {
-        "nombre": "María"
-    },
-    {
-        "nombre": "Ana"
-    },
-    {
-        "nombre": "Erlantz"
-    },
-    {
-        "nombre": "Mikel"
-    }
+            "nombre": "Aitor"
+        },
+        {
+            "nombre": "Endika"
+        },
+        {
+            "nombre": "Iñigo"
+        },
+        {
+            "nombre": "Juan Carlos"
+        },
+        {
+            "nombre": "Alejandro"
+        },
+        {
+            "nombre": "Cristian"
+        },
+        {
+            "nombre": "Raul"
+        },
+        {
+            "nombre": "Joseba"
+        },
+        {
+            "nombre": "Iker"
+        },
+        {
+            "nombre": "Kiryl"
+        },
+        {
+            "nombre": "María"
+        },
+        {
+            "nombre": "Ana"
+        },
+        {
+            "nombre": "Erlantz"
+        },
+        {
+            "nombre": "Mikel"
+        }
     ];
     var numAleatorio = Math.floor(Math.random() * alumnos.length);
 
@@ -94,17 +94,17 @@ function cambiarColor() {
     var elemento = document.getElementById('colorCambiar');
 
     var colores = [{
-        "nombre": "rojo",
-        "valor": "red"
-    },
-    {
-        "nombre": "naranja",
-        "valor": "orange"
-    },
-    {
-        "nombre": "morado",
-        "valor": "purple"
-    }
+            "nombre": "rojo",
+            "valor": "red"
+        },
+        {
+            "nombre": "naranja",
+            "valor": "orange"
+        },
+        {
+            "nombre": "morado",
+            "valor": "purple"
+        }
     ];
     var numAleatorio = Math.floor(Math.random() * colores.length);
 
@@ -119,7 +119,9 @@ function cambiarColor() {
 var mybutton = document.getElementById("botonIrTop");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () { scrollFunction() };
+window.onscroll = function () {
+    scrollFunction()
+};
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -133,4 +135,20 @@ function scrollFunction() {
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////
+/*              función para ver texto de la contraseña                                  */
+///////////////////////////////////////////////////////////////////////////////////////////
+
+function verTexto() {
+    console.trace('entrando');
+    let iContrasena = document.getElementById('contrasena');
+    if (iContrasena.type == "text") {
+        iContrasena.type = "password";
+        event.target.innerHTML = "Ver";
+    } else {
+        iContrasena.type = "text";
+        event.target.innerHTML = "Ocultar";
+    }
 }

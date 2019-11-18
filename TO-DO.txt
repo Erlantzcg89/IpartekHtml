@@ -1,4 +1,9 @@
-	TO-DO
-==================
-
-definir secciones
+=================
+=     TO-DO     =
+=================
+crear una hoja de estilos básica documentada
+last child para estilo dd
+sección css selectores avanzados > & +
+que las imágenes se amplien al clicar
+revisar padding de párrafos
+buscar botones simples intermedios de tamaño

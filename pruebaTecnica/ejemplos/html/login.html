@@ -1,0 +1,214 @@
+<!DOCTYPE html> <!-- html5 -->
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Formularios Html</title>
+
+    <base href="/pruebaTecnica/">
+
+    <link rel="icon" type="image/png" href="https://picsum.photos/id/1009/50/50" />
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+    <style>
+        /* Form */
+
+        .container {
+            max-width: 400px;
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        #contact input[type="text"],
+        #contact input[type="email"],
+        #contact input[type="tel"],
+        #contact input[type="url"],
+        #contact input[type="password"],
+        /* #contact input[type="checkbox"], */
+        #contact label,
+        #contact select,
+        #contact textarea,
+        #contact button[type="submit"] {
+            font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+        }
+
+        #contact {
+            background: #F9F9F9;
+            padding: 25px;
+            margin: 0;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        }
+
+        #contact h3 {
+            display: block;
+            font-size: 30px;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+
+        #contact h4 {
+            margin: 5px 0 15px;
+            display: block;
+            font-size: 13px;
+            font-weight: 400;
+        }
+
+        fieldset {
+            border: medium none !important;
+            margin: 0 0 10px;
+            min-width: 100%;
+            padding: 0;
+            width: 100%;
+        }
+
+        #contact input[type="text"],
+        #contact input[type="email"],
+        #contact input[type="tel"],
+        #contact input[type="url"],
+        #contact input[type="password"],
+        /* #contact input[type="checkbox"], */
+        /* #contact label, */
+        #contact select,
+        #contact textarea {
+            width: 100%;
+            border: 1px solid #ccc;
+            background: #FFF;
+            margin: 0 0 5px;
+            padding: 10px;
+        }
+
+        #contact input[type="text"]:hover,
+        #contact input[type="email"]:hover,
+        #contact input[type="tel"]:hover,
+        #contact input[type="url"]:hover,
+        #contact input[type="password"]:hover,
+        #contact input[type="checkbox"]:hover,
+        #contact select:hover,
+        #contact textarea:hover {
+            -webkit-transition: border-color 0.3s ease-in-out;
+            -moz-transition: border-color 0.3s ease-in-out;
+            transition: border-color 0.3s ease-in-out;
+            border: 1px solid #aaa;
+        }
+
+        #contact textarea {
+            height: 100px;
+            max-width: 100%;
+            resize: none;
+        }
+
+        #contact button[type="submit"] {
+            cursor: pointer;
+            width: 100%;
+            border: none;
+            background: teal;
+            color: #FFF;
+            margin: 0 0 5px;
+            padding: 10px;
+            font-size: 15px;
+        }
+
+        #contact button[type="submit"]:hover {
+            background: teal;
+            -webkit-transition: background 0.3s ease-in-out;
+            -moz-transition: background 0.3s ease-in-out;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        #contact button[type="submit"]:active {
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .copyright {
+            text-align: center;
+        }
+
+        #contact input:focus,
+        #contact textarea:focus {
+            outline: 0;
+            border: 1px solid #aaa;
+        }
+
+        ::-webkit-input-placeholder {
+            color: #888;
+        }
+
+        :-moz-placeholder {
+            color: #888;
+        }
+
+        ::-moz-placeholder {
+            color: #888;
+        }
+
+        :-ms-input-placeholder {
+            color: #888;
+        }
+    </style>
+
+    <div class="parallax">
+
+        <h1>Prueba Técnica</h1>
+        <h2 class="subTitulo">Erlantz Caballero</h2>
+
+    </div>
+
+    <nav class="menu" id="menu">
+        <a href="index.html">Inicio</a>
+        <a href="ejemplos/html/index.html">Volver</a>
+    </nav>
+
+    <main>
+        <h1 class="blanco">Formulario con login (Java Server)</h1>
+
+        <section>
+
+            <div class="container">
+                <form id="contact" action="" method="post">
+                    <h3>Login Ipartek</h3>
+                    <fieldset>
+                        <input placeholder="Nombre" type="text" name="nombre" tabindex="1" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Password" type="password" name="contrasena" tabindex="2" required>
+                    </fieldset>
+                    <fieldset>
+                        <select name="idioma" id="idioma">
+                            <option value="es">Español</option>
+                            <option value="en">Ingles</option>
+                            <option value="se" selected>Sin Especifiar</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <label for="recuerdame">Recuerdame</label>
+                        <input type="checkbox" name="recuerdame" id="recuerdame" value="0">
+                    </fieldset>
+                    <fieldset>
+                        <button name="submit" type="submit" id="contact-submit"
+                            data-submit="...Enviando">Enviar</button>
+                    </fieldset>
+                </form>
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; Ipartek - Erlantz Caballero 2019</p>
+    </footer>
+
+    <button onclick="topFunction()" id="botonIrTop" title="Go to top">Top</button>
+
+    <!-- javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
