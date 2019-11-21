@@ -39,9 +39,8 @@ body {
 
 main {
     max-width: 1024px;
-    margin: auto;
-    /* padding: 0px 50px; */
-    margin-bottom: 120px;
+
+    margin: 0 auto 120px;
 }
 
 h1,
