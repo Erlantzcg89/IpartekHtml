@@ -3,9 +3,7 @@
   esto es un comentario de bloque
   @auto: erlantz
   @version: 1.0
-  @tags: css, basic, etc..
-  @licencia: mit
-  
+  @tags: css, basic
 */
 
 /*  Estructura correcta de la hoja de estilos
@@ -40,7 +38,9 @@ body {
 }
 
 main {
-    padding: 0px 50px;
+    max-width: 1024px;
+    margin: auto;
+    /* padding: 0px 50px; */
     margin-bottom: 120px;
 }
 
@@ -156,14 +156,17 @@ code {
     background-color: rgba(255, 255, 0, 0.521);
 }
 
-footer {
-    display: inline-block;
-    width: 100%;
+.footerWrapper {
     background-color: rgba(0, 0, 0, 0.507);
-
+    width: 100%;
     position: fixed;
     bottom: 0;
+}
 
+footer {
+
+    max-width: 1024px;
+    margin: auto;
     padding: 15px 30px;
 }
 
@@ -210,14 +213,18 @@ footer p {
     color: rgb(245, 210, 81);
 }
 
-.menu {
+.menuWrapper {
+    background-color: black;
     position: sticky;
     top: 0;
+}
 
-    margin: 0px 0px 0px 0px;
+.menu {
+    max-width: 1024px;
+    margin: auto;
     padding: 15px 30px;
     /* background-color: rgba(255, 255, 0, 0.521); */
-    background-color: black;
+
 }
 
 .menu a {
@@ -256,6 +263,10 @@ footer p {
 
 .width600 {
     max-width: 600px;
+}
+
+.copy {
+    margin: 0 40px 0 0;
 }
 
 /* ------------------------------------------------------------------------------------ */
@@ -320,8 +331,8 @@ footer p {
 
 /* ------------------------------------------------------------------------------------ */
 /* Font-awesome ------------------------------------------------------------------------*/
-.iconoFooter{
-    font-size:18px;
+.iconoFooter {
+    font-size: 18px;
     color: white;
     margin: 0px 5px;
 }
