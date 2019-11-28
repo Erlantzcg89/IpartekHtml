@@ -30,7 +30,7 @@ main {
 
 .caja-flex {
     border: 2px solid #1E1926;
-    background-color: #E4A5FF;
+    background-color: green;
     width: 300px;
     min-width: 300px;
     height: 400px;
