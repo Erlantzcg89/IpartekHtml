@@ -1,0 +1,59 @@
+@import url("reset.css");
+@import url("normalize.css");
+
+/* mobile first */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1E1926;
+}
+
+main {
+    /* paleta */
+    color: #2F13CC;
+    color: #E4A5FF;
+    color: #3FBEA7;
+    color: #1E1926;
+
+    width: 100vw;
+    background-color: #3FBEA7;
+
+    padding: 40px 40px;
+}
+
+.contenedor-flex-4cajas {
+    display: flex;
+    flex-direction: column;
+}
+
+.caja-flex {
+    border: 2px solid #1E1926;
+    background-color: #E4A5FF;
+    width: 300px;
+    min-width: 300px;
+    height: 400px;
+    margin: 30px auto;
+}
+
+@media screen and (min-width: 576px) {
+    body {
+        padding: 100px 0;
+    }
+
+    main {
+        width: 100%;
+        max-width: 1024px;
+        margin: auto;
+    }
+
+    .contenedor-flex-4cajas {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .caja-flex {
+        width: 40%;
+    }
+}

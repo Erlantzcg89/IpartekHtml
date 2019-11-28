@@ -1,0 +1,120 @@
+@import url("reset.css");
+@import url("normalize.css");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 50px;
+    background-color: black;
+    color: black;
+    font-family: 'Alatsi', sans-serif;
+}
+
+main {
+    background: url(../images/hister_grey.png) no-repeat center center;
+    background-size: cover;
+    /* filter: grayscale(1); */
+
+
+    width: 1350px;
+    padding: 40px 80px 40px 80px;
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header {
+    background-color: transparent;
+    color: yellow;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0;
+}
+
+header h1,
+h2 {
+    text-shadow: 10px 10px 10px black;
+}
+
+header h1 {
+    font-size: 214px;
+    margin: 0;
+}
+
+header h2 {
+    font-size: 114px;
+    margin: 0;
+}
+
+.main {
+    letter-spacing: 2px;
+    line-height: 125px;
+    font-family: 'Baskervville', serif;
+    padding: 15px 30px;
+    margin: 800px 0 30px 0;
+    background-color: rgba(229, 245, 7, 0.582);
+    font-size: 100px;
+}
+
+footer {
+    background-color: white;
+    padding: 40px 80px 20px;
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1350px;
+}
+
+footer p {
+    font-family: 'Baskervville', serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+footer h3,
+h4 {
+    letter-spacing: 1px;
+    color: purple;
+    font-family: 'Alatsi', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+footer h3 {
+    font-size: 54px;
+}
+
+footer h4 {
+    font-size: 34px;
+}
+
+.contenedor-flex-footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-caja1 {
+    width: 80%;
+}
+
+.footer-caja2 {
+    width: 20%;
+}
+
+.footer-caja2 img {
+    width: 100%;
+}
+
+.footer-caja2 img:first-child {
+    margin: 20px 0 40px 0;
+}
+
+.d-inline {
+    display: inline;
+}
+
+.d-block {
+    display: block;
+}
