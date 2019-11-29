@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login</title>
+    <title>Tarjetas</title>
     <base href="/boostrapRepaso/">
 
     <!-- Estilos -->
@@ -15,24 +15,27 @@
 
 <body>
 
-    <!-- meter video -->
+    <!-- 
+                Navegación:
 
-    <div class="login-container container-fuid">
+                Primera página login,
+                    accede a ver-tarjetas:
 
-        <header class="login-header">
-            <h1 class="login-h1">Gestión de perros</h1>
-        </header>
+                        Gestión de Perros   |  Logout (volver al login)
+                                - Nuevo Perro
+                                - Ver Lista de Perros
+                                - Ver tarjetas -->
 
-        <!-- pattern y required -->
-        <main class="login-main">
-            <form class="login-form" action="privado/tarjetas-perros.html" method="post">
-                <input class="login-input" type="text" placeholder="Email" name="email">
-                <input class="login-input" type="text" placeholder="Contraseña" name="contra">
-                <input class="login-input" type="checkbox" placeholder="Recuerdame">
-                <input class="login-input" type="submit" value="Login">
-            </form>
-        </main>
+    <!-- menu fluido -->
+    <div class="menu-wrapper">
+        <nav class="menu"></nav>
     </div>
+
+    <main class="tarjetas-main container">
+        <!-- cards para los perros -->
+    </main>
+
+    <!-- footer fluido -->
 
     <!-- Jquery & Pooper -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
