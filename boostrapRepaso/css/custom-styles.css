@@ -42,11 +42,26 @@ body {
 .menu-wrapper,
 .footer-wrapper {
     background: rgba(0, 0, 0, 0.5);
+
     height: 100px;
+}
+
+.menu-wrapper {}
+
+.menu-wrapper.sticky {
+    top: 0;
+    position: sticky;
 }
 
 .footer-wrapper {
     height: 50px;
+    position: sticky;
+    bottom: 0;
+}
+
+.footer-wrapper.sticky {
+    top: 0;
+    position: sticky;
 }
 
 /* mis clases tarjetas-perros */
@@ -61,5 +76,12 @@ body {
 /* mis clases nuevo-perro */
 
 /* mis clases listado-perros */
+.listado-perros-main {
+
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 40px;
+}
 
 /* Clases aux */
