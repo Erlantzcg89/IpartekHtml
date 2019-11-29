@@ -1,21 +1,37 @@
 /* Base */
 body {
     font-family: 'Source Code Pro', monospace;
+    background: url("https://source.unsplash.com/aJTiW00qqtI");
+    padding: 0;
+}
+
+.login-header {
+    margin: 0;
+    background: white;
 }
 
 /* mis clases */
+.login-form {
+    background: rgba(0, 0, 0, 0.5);
+}
+
 .login-input {
     text-indent: 10px;
     margin-top: 5px;
+    border: none;
 }
 
-.login-input.m-xauto {
+.login-button {
+    margin-top: 5px;
+}
+
+.m-xauto {
     margin-right: auto;
     margin-left: auto;
 }
 
 .login-checkbox {
-    margin-right
+    margin-left: -118px;
 }
 
 /* Clases aux */
