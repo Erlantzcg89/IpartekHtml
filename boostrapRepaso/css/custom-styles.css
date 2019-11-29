@@ -5,12 +5,16 @@ body {
     padding: 0;
 }
 
-.login-header {
-    margin: 0;
+/* mis clases login (index) */
+.login-div-imagen {
     background: white;
 }
 
-/* mis clases */
+.login-h1 {
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
 .login-form {
     background: rgba(0, 0, 0, 0.5);
 }
@@ -33,5 +37,29 @@ body {
 .login-checkbox {
     margin-left: -118px;
 }
+
+/* mis clases menu & footer */
+.menu-wrapper,
+.footer-wrapper {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100px;
+}
+
+.footer-wrapper {
+    height: 50px;
+}
+
+/* mis clases tarjetas-perros */
+.tarjetas-main {
+
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 40px;
+}
+
+/* mis clases nuevo-perro */
+
+/* mis clases listado-perros */
 
 /* Clases aux */
