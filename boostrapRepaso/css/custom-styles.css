@@ -1,3 +1,21 @@
 /* Base */
+body {
+    font-family: 'Source Code Pro', monospace;
+}
+
+/* mis clases */
+.login-input {
+    text-indent: 10px;
+    margin-top: 5px;
+}
+
+.login-input.m-xauto {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.login-checkbox {
+    margin-right
+}
 
 /* Clases aux */
